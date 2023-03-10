@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi economia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js" defer></script>
+    
+</head>
+<body>
+    <h1>Mi aplicacion para gastos</h1>
+
+    <div class="row">                                   
+
+        <div div class="col l5 offset-l1 s12" class="tableFormat">    <!--s es para el menor tamaño (celulares), l para comutadoras (ver css grid)-->       
+            <table id="transactionTable">
+                <caption>Historial de transacciones</caption>
+
+                <tr>                                 
+                    <th>Tipo</th>                   
+                    <th>Descripcion</th>
+                    <th>Monto</th>
+                    <th>Categoria</th>
+                    <th>Eliminar</th>   
+                </tr>        
+                
+            </table>
+        </div>    
+
+                                          
+        <div class="col l5 s12">
+            
+            <div class="col s8 offset-s2"> 
+            <form id="transactionForm">
+                <div class="formField">
+                    
+                    <p>
+                        <span>Transaccion</span>
+                        <label>
+                            <i class="material-icons">add</i>                                                                      
+                            <input value="Ingreso" class="with-gap" name="transactionType" type="radio" checked />
+                            <span>Ingreso</span>
+                        </label>
+                        <label>
+                            <i class="material-icons">remove</i>
+                            <input value="Egreso" class="with-gap" name="transactionType" type="radio" checked />
+                            <span>Egreso</span>
+                        </label>
+                    </p>              
+                </div>
+
+                <div class="input-field">
+                    <label for="transactionDescription">Descripcion</label>
+                    <input class="validate" id="transactionDescription" type="text" name="transactionDescription">
+                </div>
+                
+                <div class="input-field">
+                    <label for="transactionAmount" >Monto</label>
+                    <input class="validate" id="transactionAmount" name="transactionAmount" type="number">
+                </div> 
+
+                <div class="formField">
+                    <label for="transactionCategory" >Categoria</label>
+                    <!-- beforebegin -->
+                    <select class="browser-default"id="transactionCategory" name="transactionCategory">
+                        <!-- afterbegin -->
+
+                        <!-- beforeend -->
+                    </select>
+                      <!-- afterend -->  
+                </div>
+                <br>  
+
+                <div class="formField">
+                    <button class="btn waves-effect waves-light" id="botonDeEnvio">
+                        Agregar<i class="material-icons right">send</i>                                
+                </buttonA>                                                                  
+                </div>           
+
+            </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+</body>
+</html>
+

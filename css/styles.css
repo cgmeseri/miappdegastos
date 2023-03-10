@@ -1,0 +1,27 @@
+
+h1 {
+    text-align: center;
+}
+
+.formField {   
+    text-align: center;
+}
+
+       
+#botonDeEnvio {
+    font-size: 25px;
+}
+
+
+th, td {
+    border: solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+.tableFormat table{         /*¨Centramos la tabla */
+    margin: 10px auto;
+}
+
+
+
